@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <script src="js/canvas2image.js"></script>
+<link rel="stylesheet" href="js/index.js">
+<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>A Pen by  Juriy Zaytsev</title>
+  
+
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<style>
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+ #div{
+    position: absolute;
+ 
+  }
+#c{
+  background-color: #118d8d;
+ 
+}
+.d{
+  position: absolute;
+  width: 300px;
+left: 70%;
+ float: left;
+ top: 1500px;
+}
+.e{
+  position: absolute;
+  width: 300px;
+  right: 35%;
+ float: right;
+ top: 1500px;
+}
+.nav-toggle {
+    padding: 50px 3px 13px 40px;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 50;
+    display: flex;
+  }
+  .hamburger {
+    width: 1.5em;
+    position: relative;
+    display: inline-block;
+    height: 0.6em;
+    font-size: 2.5em;
+    
+  }
+ 
+  .hamburger span {
+    width: 100%;
+    background: #000;
+    display: block;
+    position: absolute;
+    left: 0px;
+    height: 0.185em;
+    border-radius: 1.2px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+  }
+  .hamburger span:nth-child(1) {
+    top: 0px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 0.36em;
+  }
+  .hamburger span:nth-child(3) {
+    top: 0.73em;
+  }
+  .sidebar {
+      display: block;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    background: #F2E1D7;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s all;
+    -webkit-transition: 0.2s all;
+    -ms-transition: 0.2s all;
+    -moz-transition: 0.2s all;
+    -o-transition: 0.2s all;
+  }
+  #navicon {
+    display: none;
+  }
+  #navicon:checked ~ .sidebar {
+    visibility: visible;
+    opacity: 1;
+  }
+  #navicon:checked ~ .nav-toggle > .hamburger span {
+    top: 0.36em;
+  }
+  #navicon:checked ~ .nav-toggle > .hamburger span:nth-child(1) {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+  #navicon:checked ~ .nav-toggle > .hamburger span:nth-child(2) {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+  #navicon:checked ~ .nav-toggle > .hamburger span:nth-child(3) {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+  }
+
+header{
+  position: fixed;
+    background-color: #F2E1D7;
+    width: 100%;
+    height: 5%;
+    padding: 10px 0px 10px 150px;
+    z-index: 1;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.4);
+
+}
+h1{
+  margin-bottom: 20%;
+  bottom: 20px;
+}
+.logo{
+width: 300px;
+position: absolute;
+bottom: -95px;
+right: 650px;
+}
+  </style>
+<body>
+<header>
+  <img src="50.png" alt="" class="logo">
+</header>
+
+  
+    <input type="checkbox" id="navicon">
+    <div class="nav-toggle">
+      <label for="navicon" class="hamburger">
+        <span class="poha"></span>
+        <span class="poha"></span>
+        <span class="poha"></span>
+      </label>
+    </div>
+    <nav class="sidebar" role="complementary"></nav>
+    <div id="div">
+<canvas id="c" width="1350" height="1400"></canvas >
+</div>
+    
+  
+
+    <script  src="js/index.js"></script>
+
+  <img src="salvar.png" alt="" onclick="salvar()" class="d">
+  <img src="limpar.png" alt="" onclick="limpar()" class="e">
+
+
+
+
+</body>
+
+</html>
