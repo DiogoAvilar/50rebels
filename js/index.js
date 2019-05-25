@@ -48,13 +48,13 @@ el.ontouchend = function() {
 
 function limpar(){
   
-ctx.clearRect(0,0,1350,1400);
+ctx.clearRect(0,0,1350,360);
 ctx.beginPath()
 }
 
 function salvar(){
   
-  document.getElementById("c").src = el.toDataURL('image/png');
+  document.getElementById("c").src = el.toDataURL();
   Canvas2Image.saveAsPNG('c');
 
 
