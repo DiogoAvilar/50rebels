@@ -48,7 +48,7 @@ el.ontouchend = function() {
 
 function limpar(){
   
-ctx.clearRect(0,0,1350,360);
+ctx.clearRect(0,0,1350,1400);
 ctx.beginPath()
 }
 
